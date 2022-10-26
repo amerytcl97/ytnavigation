@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "Youtube Web Navigator",
+    "version": "1.0",
+  
+    "description": "Allow easy manuever in Youtube web page with only the use of keyboard",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+          "matches": ["*://*.mozilla.org/*", "*://*.youtube.com/*"],
+          "js": ["ytnavigation.js"]
+      }
+    ]
+  
+  }
+  
